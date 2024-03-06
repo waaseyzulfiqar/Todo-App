@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Salsa", cursive;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(300deg, rgba(173,127,200,1) 35%, rgba(244,185,194,1) 100%);
+}
+
+#todo{
+    width: 30%;
+    height: 60%;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    color: #8B8B8B;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#input{
+    width: 95%;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+
+#add-btn{
+    background-color: rgba(173,127,200,0.5);
+    padding: 10px;
+    color: #454545;
+    margin-top: 10px;
+    border-radius: 10px 23px;
+    border: none;
+}
+
+
+#del-btn{
+    background-color: rgba(173,127,200,0.5);
+    padding: 10px;
+    color: #454545;
+    margin-top: 10px;
+    border-radius: 10px 23px;
+    border: none;
+}
