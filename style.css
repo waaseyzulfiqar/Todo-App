@@ -20,7 +20,7 @@
     background-color: #FAFAFA;
     border-radius: 10px;
     color: #8B8B8B;
-    padding: 15px;
+    padding: 18px;
     overflow-y: auto;
 }
 
@@ -31,16 +31,16 @@
 
 #input{
     width: 95%;
-    height: 32px;
+    height: 42px;
     padding: 5px;
     border: 1px solid black;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
 #add-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 9px;
+    padding: 12px;
     color: #454545;
     margin-top: 10px;
     border-radius: 10px 23px;
@@ -51,7 +51,7 @@
 
 #del-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 9px;
+    padding: 12px;
     color: #454545;
     margin-top: 10px;
     border-radius: 10px 23px;
@@ -66,7 +66,7 @@ ol{
 
 
 #list-item{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #222;
     padding: 5px 0px;
     /* list-style: circle !important; */
@@ -80,9 +80,9 @@ ol{
 
 #list-item button{
     background-color: rgba(173,127,200,0.5);
-    padding: 5px;
+    padding: 8px;
     color: #454545;
-    border-radius: 8px 23px;
+    border-radius: 10px 23px;
     border: none;
     cursor: pointer;
 }
