@@ -16,7 +16,7 @@
 
 #todo{
     width: 35%;
-    height: 60%;
+    height: 70%;
     background-color: #FAFAFA;
     border-radius: 10px;
     color: #8B8B8B;
@@ -31,19 +31,19 @@
 
 #input{
     width: 95%;
-    height: 50px;
+    height: 44px;
     padding: 5px;
     border: 1px solid black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
 #add-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 15px;
+    padding: 10px;
     color: #454545;
     margin-top: 10px;
-    border-radius: 10px 23px;
+    border-radius: 10px 22px;
     border: none;
     cursor: pointer;
 }
@@ -51,10 +51,10 @@
 
 #del-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 15px;
+    padding: 10px;
     color: #454545;
     margin-top: 10px;
-    border-radius: 10px 23px;
+    border-radius: 10px 22px;
     border: none;
     cursor: pointer;
 }
@@ -66,21 +66,22 @@ ol{
 
 
 #list-item{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #222;
     padding: 5px 0px;
     /* list-style: circle !important; */
-    background-color: #ede7e7;
+    background-color: #edecec;
     padding: 5px;
     border-radius: 5px;
     width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #list-item button{
     background-color: rgba(173,127,200,0.5);
-    padding: 11px;
+    padding: 9px;
     color: #454545;
     border-radius: 10px 23px;
     border: none;
@@ -88,14 +89,27 @@ ol{
 }
 
 
-@media (max-width: 800px) {
-    #todo{
-        width: 40%;
-    }
-}
-
 @media (max-width: 600px) {
     #todo{
-        width: 50%;
+        width: 75%;
+        height: 55%;
+    }
+
+    #todo h1{
+        font-size: 1.8rem;
+    }
+
+    #input{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #list-item{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    ol{
+        margin-left: 4px;
     }
 }
