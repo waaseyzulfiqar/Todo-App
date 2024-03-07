@@ -15,7 +15,7 @@
 }
 
 #todo{
-    width: 30%;
+    width: 35%;
     height: 60%;
     background-color: #FAFAFA;
     border-radius: 10px;
@@ -50,4 +50,17 @@
     margin-top: 10px;
     border-radius: 10px 23px;
     border: none;
+}
+
+
+@media (max-width: 800px) {
+    #todo{
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    #todo{
+        width: 50%;
+    }
 }
