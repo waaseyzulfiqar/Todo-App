@@ -5,6 +5,26 @@ const ol = document.querySelector('ol')
 let todoArray = []
 
 
+// render function //
+
+function render(){
+
+    ol.innerHTML = ''
+
+    for(let i = 0; i < todoArray.length; i++){
+
+        ol.innerHTML += `<li id= "list-item">${todoArray[i]}
+        <div class = "li-btns">
+        <button onclick = "liDelBtn(${i})">Delete</button>
+        <button onclick = "liEditBtn(${i})">Edit</button>
+        </div>
+        </li>`
+    }
+
+}
+
+
+
 // input add button //
 
 function addTodo(){
@@ -13,17 +33,7 @@ function addTodo(){
 
     input.value = ''
 
-    ol.innerHTML = ''
-
-    for(let i = 0; i < todoArray.length; i++){
-
-        ol.innerHTML += `<li id= "list-item">${todoArray[i]}
-        
-        <button onclick = "liDelBtn(${i})">Delete</button>
-        <button onclick = "liEditBtn(${i})">Edit</button>
-
-        </li>`
-    }
+    render()
 }
 
 
@@ -45,19 +55,7 @@ function liDelBtn(index){
 
     todoArray.splice(index, 1)
 
-// we can a function of the below code because we are using it many times //
-
-    ol.innerHTML = ''
-
-    for(let i = 0; i < todoArray.length; i++){
-
-        ol.innerHTML += `<li id= "list-item">${todoArray[i]}
-        
-        <button onclick = "liDelTodo(${i})">Delete</button>
-        <button onclick = "liEditBtn(${i})">Edit</button>
-
-        </li>`
-    }
+    render()
 }
 
 
@@ -69,18 +67,6 @@ function liEditBtn(index){
 
     todoArray.splice(index, 1, userInput)
 
-    // we can a function of the below code because we are using it many times //
-
-    ol.innerHTML = ''
-
-    for(let i = 0; i < todoArray.length; i++){
-
-        ol.innerHTML += `<li id= "list-item">${todoArray[i]}
-        
-        <button onclick = "liDelTodo(${i})">Delete</button>
-        <button onclick = "liEditBtn(${i})">Edit</button>
-
-        </li>`
-    }
+    render()
 }
 

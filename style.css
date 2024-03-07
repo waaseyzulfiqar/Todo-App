@@ -20,8 +20,13 @@
     background-color: #FAFAFA;
     border-radius: 10px;
     color: #8B8B8B;
-    padding: 20px;
+    padding: 15px;
     overflow-y: auto;
+}
+
+#todo h1{
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 #input{
@@ -35,7 +40,7 @@
 
 #add-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 10px;
+    padding: 9px;
     color: #454545;
     margin-top: 10px;
     border-radius: 10px 23px;
@@ -46,7 +51,7 @@
 
 #del-btn{
     background-color: rgba(173,127,200,0.5);
-    padding: 10px;
+    padding: 9px;
     color: #454545;
     margin-top: 10px;
     border-radius: 10px 23px;
@@ -55,8 +60,8 @@
 }
 
 ol{
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 
@@ -64,7 +69,22 @@ ol{
     font-size: 1rem;
     color: #222;
     padding: 5px 0px;
-    list-style: lower-roman;
+    /* list-style: circle !important; */
+    background-color: #ede7e7;
+    padding: 5px;
+    border-radius: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#list-item button{
+    background-color: rgba(173,127,200,0.5);
+    padding: 5px;
+    color: #454545;
+    border-radius: 8px 23px;
+    border: none;
+    cursor: pointer;
 }
 
 
